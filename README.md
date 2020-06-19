@@ -1,4 +1,4 @@
-# :robot: Zalppy Challenge - Teste de seleção Mobile Developer
+# :robot: Zallpy Challenge - Teste de seleção Mobile Developer
 
 <!-- <p align="center">
   <img style="max-width:70%; height: 130px;" src="https://www.vagasfloripa.com.br/wp-content/uploads/company_logos/2019/07/zallpy_group_logo_home.png">
@@ -18,10 +18,10 @@ Desenvolver um:
 
 ## :heavy_check_mark: Itens do desafio cumpridos
 
-- 1. SplashScreenPage
-- 2. HomePage
-- 3. QuizzPage
-- 4. ResultPage
+- [x] SplashScreenPage
+- [x] HomePage
+- [x] QuizzPage
+- [x] ResultPage
 
 ## Outras melhorias
 
@@ -30,13 +30,15 @@ Desenvolver um:
 
 <!-- ## Instalação -->
 
-## Iniciar API de Testes (Caso habilitado)
+## AppMobile
 
-Basta rodar o script abaixo para habilitar o serviço básico de REST.
+### Iniciar App Flutter
 
-```
-json-server db.json
-```
+Para facilitação dos testes, o APP está consumindo os dados JSON via My-Json-Server ([Link do JSON](https://my-json-server.typicode.com/leandrochavesf/flutter-quiz-car/Questions))
+
+Para rodar o App consumindo dados via API própria, pode-se executar projeto da API ([Link do repositório](https://github.com/leandrochavesf/csharp-quiz-car-api))
+
+Atente-se também em atualizar a a const QUESTION_URL em [Link do arquivo](https://github.com/leandrochavesf/flutter-quiz-car/blob/master/lib/shared/consts_api.dart)
 
 <!-- Do contrario, o arquivo database.js já provê de modo facilitado a lista de produtos -->
 
