@@ -1,8 +1,8 @@
 # :robot: Zalppy Challenge - Teste de seleção Mobile Developer
 
-<p align="center">
+<!-- <p align="center">
   <img style="max-width:70%; height: 130px;" src="https://www.vagasfloripa.com.br/wp-content/uploads/company_logos/2019/07/zallpy_group_logo_home.png">
-</p>
+</p> -->
 
 ## Desafio
 
