@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter/material.dart';
+//import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:quizcar/interfaces/question_repository_interface.dart';
@@ -28,23 +28,23 @@ class QuestionRepository implements IQuestionRepository {
     }
   }
 
-  Future<List<Question>> getAllQuestionsToFile(BuildContext context) async {
-    try {
-      List<Question> listQuestion = List();
-      final result =
-          DefaultAssetBundle.of(context).loadString(ConstsApi.QUESTION_FILE);
-      if (result != null) {
-        var decodedJson = jsonDecode(result.toString());
-        decodedJson
-            .forEach((item) => listQuestion.add(Question.fromJson(item)));
-        return listQuestion;
-      } else {
-        print("Erro ao carregar lista" + result.toString());
-        return null;
-      }
-    } catch (error, stacktrace) {
-      print("Erro ao carregar lista" + stacktrace.toString());
-      return null;
-    }
-  }
+  // Future<List<Question>> getAllQuestionsToFile(BuildContext context) async {
+  //   try {
+  //     List<Question> listQuestion = List();
+  //     final result =
+  //         DefaultAssetBundle.of(context).loadString(ConstsApi.QUESTION_FILE);
+  //     if (result != null) {
+  //       var decodedJson = jsonDecode(result.toString());
+  //       decodedJson
+  //           .forEach((item) => listQuestion.add(Question.fromJson(item)));
+  //       return listQuestion;
+  //     } else {
+  //       print("Erro ao carregar lista" + result.toString());
+  //       return null;
+  //     }
+  //   } catch (error, stacktrace) {
+  //     print("Erro ao carregar lista" + stacktrace.toString());
+  //     return null;
+  //   }
+  // }
 }

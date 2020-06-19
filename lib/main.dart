@@ -3,10 +3,15 @@ import 'package:flutter/services.dart';
 import 'package:quizcar/pages/splash_page.dart';
 
 void main() {
-  // Use to set colors of system icons
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(statusBarBrightness: Brightness.dark));
-  runApp(MyApp());
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitDown,
+    DeviceOrientation.portraitUp,
+  ]).then((_) {
+    runApp(MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {

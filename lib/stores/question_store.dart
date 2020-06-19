@@ -8,7 +8,7 @@ class QuestionStore = _QuestionStoreBase with _$QuestionStore;
 abstract class _QuestionStoreBase with Store {
   QuestionRepository _questionRepository;
 
-  _QuestionControllerBase() {
+  _QuestionStoreBase() {
     _questionRepository = QuestionRepository();
   }
 

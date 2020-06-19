@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:quizcar/pages/home_page.dart';
 
 class ResultPage extends StatefulWidget {
-  int marks;
+  int points;
 
-  ResultPage({Key key, @required this.marks}) : super(key: key);
+  ResultPage({Key key, @required this.points}) : super(key: key);
 
   @override
-  _ResultPageState createState() => _ResultPageState(marks);
+  _ResultPageState createState() => _ResultPageState(points);
 }
 
 class _ResultPageState extends State<ResultPage> {
@@ -22,21 +22,21 @@ class _ResultPageState extends State<ResultPage> {
 
   @override
   void initState() {
-    if (marks < 20) {
+    if (points < 20) {
       image = images[2];
-      message = "You Should Try hard.. \n" + "You Scored $marks";
-    } else if (marks < 35) {
+      message = "You Should Try hard.. \n" + "You Scored $points";
+    } else if (points < 35) {
       image = images[1];
-      message = "You Can Do Better.. \n" + "You Scored $marks";
+      message = "You Can Do Better.. \n" + "You Scored $points";
     } else {
       image = images[0];
-      message = "You Did Very Well.. \n" + "You Scored $marks";
+      message = "You Did Very Well.. \n" + "You Scored $points";
     }
     super.initState();
   }
 
-  int marks;
-  _ResultPageState(this.marks);
+  int points;
+  _ResultPageState(this.points);
 
   @override
   Widget build(BuildContext context) {
