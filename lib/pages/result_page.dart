@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:quizcar/pages/home_page.dart';
 
 class ResultPage extends StatefulWidget {
-  int points;
+  double totalQuestions;
+  double points;
 
-  ResultPage({Key key, @required this.points}) : super(key: key);
+  ResultPage({
+    Key key,
+    @required this.points,
+    @required this.totalQuestions,
+  }) : super(key: key);
 
   @override
-  _ResultPageState createState() => _ResultPageState(points);
+  _ResultPageState createState() => _ResultPageState(points, totalQuestions);
 }
 
 class _ResultPageState extends State<ResultPage> {
@@ -20,23 +25,26 @@ class _ResultPageState extends State<ResultPage> {
   String message;
   String image;
 
+  double points;
+  double totalQuestions;
+  _ResultPageState(this.points, this.totalQuestions);
+
   @override
   void initState() {
-    if (points < 20) {
+    points = (points * 100) / totalQuestions;
+    if (points < 50) {
       image = images[2];
-      message = "You Should Try hard.. \n" + "You Scored $points";
-    } else if (points < 35) {
+      message = "Você não foi bem..  \n" + "Sua pontuação $points%";
+    } else if (points < 90) {
       image = images[1];
-      message = "You Can Do Better.. \n" + "You Scored $points";
+      message = "Voce pode ir melhor.. \n" + "Sua pontuação $points%";
     } else {
       image = images[0];
-      message = "You Did Very Well.. \n" + "You Scored $points";
+      message = "Parabéns, voce mostra que domina o assunto \n" +
+          "Sua pontuação $points";
     }
     super.initState();
   }
-
-  int points;
-  _ResultPageState(this.points);
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +84,7 @@ class _ResultPageState extends State<ResultPage> {
                           message,
                           style: TextStyle(
                             fontSize: 20.0,
-                            fontFamily: "Quando",
+                            fontFamily: "Roboto",
                           ),
                         ),
                       ),
@@ -98,7 +106,7 @@ class _ResultPageState extends State<ResultPage> {
                     ));
                   },
                   child: Text(
-                    "Continue",
+                    "Página Inicial",
                     style: TextStyle(fontSize: 18.0),
                   ),
                   padding:

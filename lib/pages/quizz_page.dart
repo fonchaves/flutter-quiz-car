@@ -18,7 +18,8 @@ class _QuizzPageState extends State<QuizzPage> {
   //String showTimer = (timer - 1).toString(); // TODO: ANALISAR LEGIBILIDADE
   String showTimer = "30"; // TODO: ANALISAR LEGIBILIDADE
   bool cancelTimer = false;
-  int points = 0;
+  double points = 0; // TODO: use int here, Cast in next page
+  double totalQuestions = 5.0; // TODO: Add lenght of list here
   Color colorToShow = Colors.grey[800];
   Color buttonCollor = Colors.grey[800];
 
@@ -56,7 +57,8 @@ class _QuizzPageState extends State<QuizzPage> {
     } else {
       timer = 0; // Zerar Timer e Função
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => ResultPage(points: points),
+        builder: (context) =>
+            ResultPage(points: points, totalQuestions: totalQuestions),
       ));
     }
     buttonCollor = Colors.grey[800];

@@ -21,9 +21,13 @@ class _HomePageState extends State<HomePage> {
 
     //TODO: Add SafeArea
     return Scaffold(
+      // TODO: Use Expanded
       backgroundColor: Colors.grey[900],
       body: Column(
         children: <Widget>[
+          Container(
+            height: 400,
+          ),
           Padding(
             padding: EdgeInsets.all(
               20.0,
