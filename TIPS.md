@@ -14,8 +14,11 @@
 
 - [] MVC
   - [x] Model
-  - [] View
-  - [] Controller
+    - as tores, pages
+  - [x] View
+    - as Pages
+  - [x] Controller
+    - inside Pages and Sore
 
 ### Naming Convention
 
@@ -31,3 +34,9 @@
   `flutter packages pub run build_runner watch`
 
 ### Observations
+
+#### Photos References
+
+- [Photo by Richard Biros on Unsplash](assets/richard-biros-unsplash.jpg)
+- [Photo by Mattia Righetti on Unsplash](assets/mattia-righetti-unsplash.jpg)
+- [Photo by Roberto Nickson on Unsplash](assets/roberto-nickson-unsplash)

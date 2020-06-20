@@ -9,7 +9,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  // TODO: Get content for api in background to cache local on initState
   @override
   void initState() {
     super.initState();
@@ -27,6 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 
+  // TODO: Add FadeInOut Animation
   @override
   Widget build(BuildContext context) {
     double _height = MediaQuery.of(context).size.height;
@@ -39,23 +39,25 @@ class _SplashScreenState extends State<SplashScreen> {
           Container(
             height: _height,
             width: _width,
-            child: Image.network(
-              'https://images.unsplash.com/photo-1556448851-9359658faa54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+            child: Image(
               fit: BoxFit.cover,
+              image: AssetImage("images/richard-biros-unsplash.jpg"),
             ),
           ),
-          Container(
-            padding: EdgeInsets.all(15.0),
-            alignment: Alignment.bottomRight,
-            height: _height,
-            width: _width,
-            child: Text(
-              "Photo by Richard Biros on Unsplash",
-              style: TextStyle(
-                fontSize: 16.0,
-                color: Colors.white60,
-                fontFamily: "Roboto",
-                fontWeight: FontWeight.w500,
+          SafeArea(
+            minimum: EdgeInsets.all(15.0),
+            child: Container(
+              alignment: Alignment.bottomRight,
+              height: _height,
+              width: _width,
+              child: Text(
+                "Photo by Richard Biros on Unsplash",
+                style: TextStyle(
+                  fontSize: 16.0,
+                  color: Colors.white60,
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           ),

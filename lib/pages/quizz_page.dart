@@ -16,7 +16,7 @@ class _QuizzPageState extends State<QuizzPage> {
   int index = 0;
   int timer = 31;
   //String showTimer = (timer - 1).toString(); // TODO: ANALISAR LEGIBILIDADE
-  String showTimer = "30"; // TODO: ANALISAR LEGIBILIDADE
+  String showTimer = "30";
   bool cancelTimer = false;
   double points = 0; // TODO: use int here, Cast in next page
   double totalQuestions = 5.0; // TODO: Add lenght of list here

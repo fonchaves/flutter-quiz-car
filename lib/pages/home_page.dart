@@ -1,8 +1,6 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-// import 'package:quizcar/pages/quiz_page.dart';
 import 'package:quizcar/pages/quizz_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,60 +9,66 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  // TODO: Get content for api in background to cache local on initState
+
   @override
   Widget build(BuildContext context) {
-    //TODO: Put this setOrientation to cover all app
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitDown,
-      DeviceOrientation.portraitUp,
-    ]);
-
-    //TODO: Add SafeArea
     return Scaffold(
-      // TODO: Use Expanded
       backgroundColor: Colors.grey[900],
-      body: Column(
-        children: <Widget>[
-          Container(
-            height: 400,
-          ),
-          Padding(
-            padding: EdgeInsets.all(
-              20.0,
-            ),
-            child: InkWell(
-              onTap: () {
-                Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => QuizzPage()));
-              },
-              child: Material(
-                elevation: 10.0,
-                borderRadius: BorderRadius.circular(20.0),
-                color: Colors.indigoAccent,
-                child: Container(
-                  // TODO: Test and check AxisAlignment of attributes
-                  child: Column(
-                    // crossAxisAlignment: CrossAxisAlignment.stretch,
-                    // mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Center(
-                        child: Text(
-                          "Começar!!",
-                          style: TextStyle(
-                            fontSize: 24.0,
-                            color: Colors.white,
-                            fontFamily: "Roboto",
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                      ),
-                    ],
+      body: SafeArea(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              Expanded(
+                flex: 7,
+                child: Padding(
+                  padding: EdgeInsets.all(40.0),
+                  child: Image(
+                    image: AssetImage("images/quizzapp-logo.png"),
                   ),
                 ),
               ),
-            ),
+              Expanded(
+                flex: 3,
+                child: Padding(
+                  padding: EdgeInsets.all(
+                    40.0,
+                  ),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => QuizzPage()));
+                    },
+                    child: Material(
+                      elevation: 10.0,
+                      borderRadius: BorderRadius.circular(50.0),
+                      color: Colors.indigoAccent,
+                      child: Container(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          children: <Widget>[
+                            Center(
+                              child: Text(
+                                "Começar",
+                                style: TextStyle(
+                                  fontSize: 24.0,
+                                  color: Colors.white,
+                                  fontFamily: "Roboto",
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
