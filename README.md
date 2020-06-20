@@ -36,13 +36,18 @@
 
 ## Sobre o desafio
 
-Desenvolver de uma aplicação mobile simples sobre a origem das montadoras (país de origem), onde o usuário deverá responder algumas perguntas e obter seu resultado em forma de porcentagem no final do questionário.
+Desenvolver uma aplicação mobile simples sobre a origem das montadoras (país de origem), onde o usuário deverá responder algumas perguntas e obter seu resultado em forma de porcentagem no final do questionário.
 
 #### Requisitos técnicos
 
 - [x] Quiz App em Flutter com Dart
 - [x] API service em C#
   - [Link do repositório](https://github.com/leandrochavesf/csharp-quiz-car-api)
+  -
+
+#### Requisitos técnicos
+
+- Teste o App: [Link da aplicação](https://leandrochaves.me/app/flutter-quiz-car)
 
 <!-- ## Resources and Procedures -->
 

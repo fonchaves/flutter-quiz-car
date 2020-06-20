@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: <Widget>[
               Expanded(
-                flex: 7,
+                flex: 6,
                 child: Padding(
                   padding: EdgeInsets.all(40.0),
                   child: Image(
@@ -28,38 +28,40 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              Expanded(
-                flex: 3,
+              Container(
                 child: Padding(
                   padding: EdgeInsets.all(
                     40.0,
                   ),
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => QuizzPage()));
-                    },
-                    child: Material(
-                      elevation: 10.0,
-                      borderRadius: BorderRadius.circular(50.0),
-                      color: Colors.indigoAccent,
-                      child: Container(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          mainAxisSize: MainAxisSize.max,
-                          children: <Widget>[
-                            Center(
-                              child: Text(
-                                "Começar",
-                                style: TextStyle(
-                                  fontSize: 24.0,
-                                  color: Colors.white,
-                                  fontFamily: "Roboto",
-                                  fontWeight: FontWeight.w700,
+                  child: Container(
+                    height: 60,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => QuizzPage()));
+                      },
+                      child: Material(
+                        elevation: 10.0,
+                        borderRadius: BorderRadius.circular(50.0),
+                        color: Colors.indigoAccent,
+                        child: Container(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Center(
+                                child: Text(
+                                  "Começar",
+                                  style: TextStyle(
+                                    fontSize: 24.0,
+                                    color: Colors.white,
+                                    fontFamily: "Roboto",
+                                    fontWeight: FontWeight.w700,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
