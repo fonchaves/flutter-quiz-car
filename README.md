@@ -1,45 +1,72 @@
-# :robot: Zallpy Challenge - Teste de seleção Mobile Developer
-
 <!-- <p align="center">
   <img style="max-width:70%; height: 130px;" src="https://www.vagasfloripa.com.br/wp-content/uploads/company_logos/2019/07/zallpy_group_logo_home.png">
 </p> -->
 
-<!-- ![alt text](http://url/to/img.png) -->
+<!-- ![alt text](https://github.com/leandrochavesf/flutter-quiz-car/blob/master/images/quizzapp-logo.png?raw=true) -->
 
-![alt text](https://github.com/leandrochavesf/flutter-quiz-car//blob/master/assets/quizzapp-logo.png?raw=true)
+<p align="center">
+  <img src="https://github.com/leandrochavesf/flutter-quiz-car/blob/master/.github/quizzapp-logo-dark.png?raw=true",>
+  <br />
+<p align="center">Discover your knowledge about the car factories&#x27; history.</p>
+  <br />
+  <br />
+  <!-- <img src="https://img.shields.io/github/issues/SkullDarth/bootcamp-gostack-challenge-03">
+  <img src="https://img.shields.io/github/forks/SkullDarth/bootcamp-gostack-challenge-03">
+  <img src="https://img.shields.io/badge/made%20by-SkullDarth-lightgrey">
+  <img src="https://img.shields.io/github/stars/SkullDarth/bootcamp-gostack-challenge-03">
+  <img src="https://img.shields.io/github/license/SkullDarth/bootcamp-gostack-challenge-03?logoColor=MIT"> -->
 
-<!-- Links Relativos
-[Contribution guidelines for this project](docs/CONTRIBUTING.md) -->
+   <p align="center">
+      <a href="#sobre-o-desafio">Sobre o desafio</a>
+      <strong>|</strong>
+      <!-- <a href="#resources-and-procedures">Resources and Procedures</a>
+      <strong>|</strong> -->
+      <!-- <a href="#running-for-first-time">Running for First Time</a>
+      <strong>|</strong> -->
+      <a href="#project-tree">Project Tree</a>
+      <strong>|</strong>
+      <!-- <a href="#project-in-function">Project in function</a>
+      <strong>|</strong> -->
+      <a href="#license">License</a>
+   </p>
 
-## Desafio
+:robot: Zallpy Challenge - [ Mobile Technical Challenge](#)
 
-Desenvolver um:
+</p>
+
+## Sobre o desafio
+
+Desenvolver de uma aplicação mobile simples sobre a origem das montadoras (país de origem), onde o usuário deverá responder algumas perguntas e obter seu resultado em forma de porcentagem no final do questionário.
+
+#### Requisitos técnicos
 
 - [x] Quiz App em Flutter com Dart
 - [x] API service em C#
   - [Link do repositório](https://github.com/leandrochavesf/csharp-quiz-car-api)
 
-## Features
+<!-- ## Resources and Procedures -->
 
-- Dependências mais recentes e atualizadas
+## Recursos e Procedimentos
 
-## :heavy_check_mark: Itens do desafio cumpridos
+#### Recursos Desenvolvidos
+
+-Páginas
 
 - [x] SplashScreenPage
 - [x] HomePage
 - [x] QuizzPage
 - [x] ResultPage
 
-## Outras melhorias
+#### Outras melhorias
 
 - [x] Versões mais atualizadas
 - [x] Instruções detalhadas de Readme
 
-<!-- ## Instalação -->
+<!-- ## Running for First Time -->
 
-## AppMobile
+## Instalação
 
-### Iniciar App Flutter
+#### Iniciar App Flutter
 
 Para facilitação dos testes, o APP está consumindo os dados JSON via My-Json-Server ([Link do JSON](https://my-json-server.typicode.com/leandrochavesf/flutter-quiz-car/Questions))
 
@@ -68,19 +95,59 @@ Você também pode conferir todo o passo a passo de desenvolvimento no link a se
 ou mesmo conferir alguns insights e problemas durante o desenvolvimento.
 [Problemas](https://github.com/leandrochavesf/crawler-challenge/blob/master/TIPS.md) -->
 
-# quizcar
+<!-- #### Now you can open [Insomnia][insomnia] and import [Insomnia file](./Insomnia.json) to test routes. -->
 
-Discover your knowledge about the car factories&#x27; history.
+## Project Tree
 
-## Getting Started
+```
+quiz_car
+├─ LICENSE.md
+├─ README.md
+├─ TIPS.md
+├─ assets
+│  ├─ db.json
+│  └─ question.json
+├─ db.json
+├─ fonts
+│  └─ Roboto-Regular.ttf
+├─ images
+├─ lib
+│  ├─ interfaces
+│  │  └─ question_repository_interface.dart
+│  ├─ main.dart
+│  ├─ models
+│  │  └─ question_model.dart
+│  ├─ pages
+│  │  ├─ home_page.dart
+│  │  ├─ quizz_page.dart
+│  │  ├─ result_page.dart
+│  │  └─ splash_page.dart
+│  ├─ repositories
+│  │  └─ question_repository.dart
+│  ├─ shared
+│  │  └─ consts_api.dart
+│  └─ stores
+│     ├─ question_store.dart
+│     └─ question_store.g.dart
+├─ pubspec.lock
+├─ pubspec.yaml
+└─ test
+   └─ widget_test.dart
+```
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+<!-- # quizcar
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+samples, guidance on mobile development, and a full API reference. -->
+
+## License
+
+This project is under the MIT license. See the [LICENSE](./LICENSE.md) for more information.
+
+---
+
+#### Made by Leandro Chaves [Get in touch!](https://leandrochaves.me/linkedin)

@@ -16,6 +16,7 @@ class ResultPage extends StatefulWidget {
 }
 
 class _ResultPageState extends State<ResultPage> {
+  //TODO: Add Emojis in place of images
   List<String> images = [
     "images/success.png",
     "images/good.png",
@@ -59,7 +60,6 @@ class _ResultPageState extends State<ResultPage> {
           Expanded(
             flex: 7,
             child: Material(
-              elevation: 10.0,
               child: Container(
                 child: Column(
                   children: <Widget>[
