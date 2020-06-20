@@ -45,7 +45,7 @@ Desenvolver uma aplicação mobile simples sobre a origem das montadoras (país 
   - [Link do repositório](https://github.com/leandrochavesf/csharp-quiz-car-api)
   -
 
-#### Requisitos técnicos
+#### Projeto em funcionamento
 
 - Teste o App: [Link da aplicação](https://leandrochaves.me/app/flutter-quiz-car)
 
