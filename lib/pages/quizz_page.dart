@@ -21,7 +21,7 @@ class _QuizzPageState extends State<QuizzPage> {
   double points = 0; // TODO: use int here, Cast in next page
   double totalQuestions = 5.0; // TODO: Add lenght of list here
   Color colorToShow = Colors.grey[800];
-  Color buttonCollor = Colors.grey[800];
+  Color buttonColor = Colors.grey[800];
 
   @override
   void initState() {
@@ -61,7 +61,7 @@ class _QuizzPageState extends State<QuizzPage> {
             ResultPage(points: points, totalQuestions: totalQuestions),
       ));
     }
-    buttonCollor = Colors.grey[800];
+    buttonColor = Colors.grey[800];
     startTimer();
   }
 
@@ -76,7 +76,7 @@ class _QuizzPageState extends State<QuizzPage> {
       colorToShow = Colors.red;
     }
     setState(() {
-      buttonCollor = colorToShow;
+      buttonColor = colorToShow;
       cancelTimer = true;
     });
 
@@ -96,7 +96,7 @@ class _QuizzPageState extends State<QuizzPage> {
         child: RaisedButton(
           onPressed: () => checkChoice(optionQuestion),
           highlightColor: Colors.grey[900],
-          color: buttonCollor, //TODO: MODIFY COLOR HERE
+          color: buttonColor, //TODO: MODIFY COLOR HERE
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(21.0)),
           child: Text(

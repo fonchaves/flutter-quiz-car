@@ -1,15 +1,9 @@
-<!-- <p align="center">
-  <img style="max-width:70%; height: 130px;" src="https://www.vagasfloripa.com.br/wp-content/uploads/company_logos/2019/07/zallpy_group_logo_home.png">
-</p> -->
-
-<!-- ![alt text](https://github.com/leandrochavesf/flutter-quiz-car/blob/master/images/quizzapp-logo.png?raw=true) -->
-
 <p align="center">
   <img src="https://github.com/leandrochavesf/flutter-quiz-car/blob/master/.github/quizzapp-logo-dark.png?raw=true",>
   <br />
+  <br />
+  <br />
 <p align="center">Discover your knowledge about the car factories&#x27; history.</p>
-  <br />
-  <br />
   <!-- <img src="https://img.shields.io/github/issues/SkullDarth/bootcamp-gostack-challenge-03">
   <img src="https://img.shields.io/github/forks/SkullDarth/bootcamp-gostack-challenge-03">
   <img src="https://img.shields.io/badge/made%20by-SkullDarth-lightgrey">
@@ -19,14 +13,12 @@
    <p align="center">
       <a href="#sobre-o-desafio">Sobre o desafio</a>
       <strong>|</strong>
-      <!-- <a href="#resources-and-procedures">Resources and Procedures</a>
-      <strong>|</strong> -->
-      <!-- <a href="#running-for-first-time">Running for First Time</a>
-      <strong>|</strong> -->
+      <a href="#recursos-e-funcionalidades">Recursos e Funcionalidades</a>
+      <strong>|</strong>
+      <a href="#instalação">Instalação</a>
+      <strong>|</strong>
       <a href="#project-tree">Project Tree</a>
       <strong>|</strong>
-      <!-- <a href="#project-in-function">Project in function</a>
-      <strong>|</strong> -->
       <a href="#license">License</a>
    </p>
 
@@ -42,67 +34,85 @@ Desenvolver uma aplicação mobile simples sobre a origem das montadoras (país 
 
 - [x] Quiz App em Flutter com Dart
 - [x] API service em C#
-  - [Link do repositório](https://github.com/leandrochavesf/csharp-quiz-car-api)
-  -
+  - [Link do repositório][github-quizcar-api]
 
 #### Projeto em funcionamento
 
-- Teste o App: [Link da aplicação](https://leandrochaves.me/app/flutter-quiz-car)
+- Visualize o funcionamento do app [Link da aplicação][quizcar-live]
 
-<!-- ## Resources and Procedures -->
+## Recursos e Funcionalidades
 
-## Recursos e Procedimentos
+#### Tecnologias e Libraries usadas neste projeto
 
-#### Recursos Desenvolvidos
+- [MobX][mobx]
+- [Mobx Codegen][mobx-codegen-pub]
+- [Http][http-pub]
+- [Build Runner][buildrunner-pub]
+- [Json to Dart Convert][json-to-dart]
+- [VS Code][vscode] com [EditorConfig][editorconfig] e [ESLint][eslint]
 
--Páginas
+#### Recursos desenvolvidos e futuros
 
-- [x] SplashScreenPage
-- [x] HomePage
-- [x] QuizzPage
-- [x] ResultPage
+- [x] Telas obrigatórias do ciclo do usuário
+- [x] Quantidade indefinida de perguntas
+- [x] Cronometro decrescente para cada pergunta
+- [x] Resposta visual imediata para pergunta escolhida
+- [x] Tela de apresentação (SplashScreen)
+- [ ] Uso de MobX para gerenciamento de estados
+- [ ] Carregar perguntas ao iniciar App
+- [ ] Cache de elementos da API
+- [ ] Tratamento de responsabilidades em MVC
+- [ ] Refino de MediaQueries para Responsividade
+- [ ] SplashScreen com animações de fadeIn e fadeOut
+- [ ] Armazenamento de ranking em localStorage
+- [ ] Uso de Environment Variables para CI/CD (Opcional)
+- [ ] Imagens aleatórias de API do Unsplash (Opcional)
 
-#### Outras melhorias
+#### Telas
 
-- [x] Versões mais atualizadas
-- [x] Instruções detalhadas de Readme
-
-<!-- ## Running for First Time -->
+- [x] Apresentação (SplashScreenPage)
+- [x] Principal (HomePage)
+- [x] Perguntas(QuizzPage)
+- [x] Resultados (ResultPage)
+- [ ] Histórico de Ranking (RankingPage)
 
 ## Instalação
 
 #### Iniciar App Flutter
 
-Para facilitação dos testes, o APP está consumindo os dados JSON via My-Json-Server ([Link do JSON](https://my-json-server.typicode.com/leandrochavesf/flutter-quiz-car/Questions))
+Para clonar e executar esta aplicação, você vai precisar do [Git][git], [Android SDK][android-sdk], [Flutter][flutter] e [VSCode][vscode] instalados no seu computador.
 
-Para rodar o App consumindo dados via API própria, pode-se executar projeto da API ([Link do repositório](https://github.com/leandrochavesf/csharp-quiz-car-api))
-
-Atente-se também em atualizar a a const QUESTION_URL em [Link do arquivo](https://github.com/leandrochavesf/flutter-quiz-car/blob/master/lib/shared/consts_api.dart)
-
-<!-- Do contrario, o arquivo database.js já provê de modo facilitado a lista de produtos -->
-
-<!-- ## Teste
-
-O aplicativo foi desenvolvido com foco no Android, sendo assim conecte um celular no seu computador, ou use um simulador de Android, em seguida rode o comando abaixo:
+Linhas de comando:
 
 ```bash
-react-native run-android
+# Clone this repository
+$ git clone https://github.com/leandrochavesf/flutter-quiz-car.git
+
+# Go into the repository
+$ cd flutter-quiz-car
+
+# Install dependencies
+$ flutter pub get
+
+# Run the App
+$ flutter run
 ```
 
-Para instruções de como preparar seu ambiente de testes, segui o link abaixo:
-[Configuração de Ambiente](https://facebook.github.io/react-native/docs/getting-started) -->
+#### Observações
 
-<!-- ## Passos
+Para facilitar os testes, o APP está consumindo dados JSON via My-Json-Server ([Link do JSON][json-server-web])
 
-Você também pode conferir todo o passo a passo de desenvolvimento no link a seguir.
-[Passo a Passo](https://github.com/leandrochavesf/crawler-challenge/blob/master/STEPS.md)
+Para rodar o App consumindo dados via API própria, siga as instruções do projeto da API ([Link do repositório][github-quizcar-api])
 
-ou mesmo conferir alguns insights e problemas durante o desenvolvimento.
-[Problemas](https://github.com/leandrochavesf/crawler-challenge/blob/master/TIPS.md) -->
+Atente-se também em atualizar a a const `QUESTION_URL` em [consts_api.dart](./lib/shared/consts_api.dart)
 
-<!-- #### Now you can open [Insomnia][insomnia] and import [Insomnia file](./Insomnia.json) to test routes. -->
+#### Insights
+
+Você também pode conferir alguns insights e outros dados relatados durante o desenvolvimento em [Insights.md](./.github/INSIGHTS.md)
 
 ## Project Tree
+
+Abaixo uma lista dos arquivos mais relevantes do projeto
 
 ```
 quiz_car
@@ -140,15 +150,6 @@ quiz_car
    └─ widget_test.dart
 ```
 
-<!-- # quizcar
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference. -->
-
 ## License
 
 This project is under the MIT license. See the [LICENSE](./LICENSE.md) for more information.
@@ -156,3 +157,29 @@ This project is under the MIT license. See the [LICENSE](./LICENSE.md) for more 
 ---
 
 #### Made by Leandro Chaves [Get in touch!](https://leandrochaves.me/linkedin)
+
+<!-- ## Internal Links  -->
+
+[quizcar-live]: https://leandrochaves.me/app/flutter-quiz-car
+[github-quizcar-api]: https://github.com/leandrochavesf/csharp-quiz-car-api
+
+<!-- Resources -->
+
+[mobx]: https://pub.dev/packages/mobx
+[mobx-codegen-pub]: https://pub.dev/packages/mobx_codegen
+[http-pub]: https://pub.dev/packages/http
+[buildrunner-pub]: https://pub.dev/packages/build_runner
+[json-to-dart]: https://javiercbk.github.io/json_to_dart
+
+<!-- Editor -->
+
+[vscode]: https://code.visualstudio.com/
+[editorconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+<!-- Technologies -->
+
+[git]: https://git-scm.com
+[android-sdk]: https://developer.android.com/studio
+[flutter]: https://flutter.dev/docs/get-started/install
+[json-server-web]: https://my-json-server.typicode.com/leandrochavesf/flutter-quiz-car/Questions
