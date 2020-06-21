@@ -22,7 +22,7 @@
       <a href="#license">License</a>
    </p>
 
-:robot: Zallpy Challenge - [ Mobile Technical Challenge](#)
+:robot: Challenge - [ Mobile Technical Challenge](#)
 
 </p>
 
@@ -65,6 +65,7 @@ Desenvolver uma aplicação mobile simples sobre a origem das montadoras (país 
 - [ ] Refino de MediaQueries para Responsividade
 - [ ] SplashScreen com animações de fadeIn e fadeOut
 - [ ] Armazenamento de ranking em localStorage
+- [ ] Testes unitários
 - [ ] Uso de Environment Variables para CI/CD (Opcional)
 - [ ] Imagens aleatórias de API do Unsplash (Opcional)
 
@@ -116,15 +117,14 @@ Abaixo uma lista dos arquivos mais relevantes do projeto
 
 ```
 quiz_car
+├─ .github
+│  └─ INSIGHTS.md
 ├─ LICENSE.md
 ├─ README.md
-├─ TIPS.md
 ├─ assets
 │  ├─ db.json
 │  └─ question.json
-├─ db.json
 ├─ fonts
-│  └─ Roboto-Regular.ttf
 ├─ images
 ├─ lib
 │  ├─ interfaces
@@ -144,7 +144,6 @@ quiz_car
 │  └─ stores
 │     ├─ question_store.dart
 │     └─ question_store.g.dart
-├─ pubspec.lock
 ├─ pubspec.yaml
 └─ test
    └─ widget_test.dart

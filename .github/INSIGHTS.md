@@ -1,24 +1,24 @@
-### Directory Pattern
+### Directory Elements
 
-- [] Services
-- [] Controllers
+- [ ] Controllers
+- [ ] Services
 - [x] Models
 - [x] Interfaces
 - [x] Repositories
 - [x] Shared
-- [] Views
+- [ ] Views
 - [x] Pages
 - [x] Store
 
 ### Architectural Pattern
 
-- [] MVC
+- MVC
   - [x] Model
-    - as tores, pages
+    - inside Models, Stores and Repositories
   - [x] View
     - as Pages
   - [x] Controller
-    - inside Pages and Sore
+    - inside Pages and Store
 
 ### Naming Convention
 
@@ -37,6 +37,6 @@
 
 #### Photos References
 
-- [Photo by Richard Biros on Unsplash](assets/richard-biros-unsplash.jpg)
-- [Photo by Mattia Righetti on Unsplash](assets/mattia-righetti-unsplash.jpg)
-- [Photo by Roberto Nickson on Unsplash](assets/roberto-nickson-unsplash)
+- [Photo by Richard Biros on Unsplash](../images/richard-biros-unsplash.jpg)
+- [Photo by Mattia Righetti on Unsplash](../images/mattia-righetti-unsplash.jpg)
+- [Photo by Roberto Nickson on Unsplash](../images/roberto-nickson-unsplash)
