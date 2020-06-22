@@ -35,9 +35,9 @@
 
 ### Bug found and fixed
 
-[x] - Overflow pixel in Image on result_page
-[x] - Adjusts double points to only two numbers
-[ ] - casting Double to int in Result_page to cleaner code
+- [x] Overflow pixel in Image on result_page
+- [x] Adjusts double points to only two numbers
+- [ ] casting Double to int in Result_page to cleaner code
 
 ### Observations
 

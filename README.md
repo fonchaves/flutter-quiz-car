@@ -49,7 +49,7 @@ Desenvolver uma aplicação mobile simples sobre a origem das montadoras (país 
 - [Http][http-pub]
 - [Build Runner][buildrunner-pub]
 - [Json to Dart Convert][json-to-dart]
-- [VS Code][vscode] com [EditorConfig][editorconfig] e [ESLint][eslint]
+- [VS Code][vscode] com [EditorConfig][editorconfig].
 
 #### Recursos desenvolvidos e futuros
 
@@ -174,7 +174,6 @@ This project is under the MIT license. See the [LICENSE](./LICENSE.md) for more 
 
 [vscode]: https://code.visualstudio.com/
 [editorconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-[eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 <!-- Technologies -->
 
