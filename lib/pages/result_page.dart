@@ -33,40 +33,40 @@ class _ResultPageState extends State<ResultPage> {
   @override
   void initState() {
     points = (points * 100) / totalQuestions;
+    String point = points.toStringAsFixed(0);
     if (points < 50) {
       image = images[2];
-      message = "Você não foi bem..  \n" + "Sua pontuação $points%";
+      message = "Você não foi bem..  \n" + "Sua pontuação $point%";
     } else if (points < 90) {
       image = images[1];
-      message = "Voce pode ir melhor.. \n" + "Sua pontuação $points%";
+      message = "Voce pode ir melhor.. \n" + "Sua pontuação $point%";
     } else {
       image = images[0];
       message = "Parabéns, voce mostra que domina o assunto \n" +
-          "Sua pontuação $points";
+          "Sua pontuação $point";
     }
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    double _height = MediaQuery.of(context).size.height;
+    double _width = MediaQuery.of(context).size.width;
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Result",
-        ),
-      ),
-      body: Column(
-        children: <Widget>[
-          Expanded(
-            flex: 7,
-            child: Material(
+      body: Container(
+        height: _height,
+        width: _width,
+        child: Column(
+          children: <Widget>[
+            Material(
               child: Container(
                 child: Column(
                   children: <Widget>[
                     Material(
                       child: Container(
-                        width: 300.0,
-                        height: 300.0,
+                        width: _width * 0.5,
+                        height: _height * 0.5,
                         child: ClipRect(
                           child: Image(
                             image: AssetImage(image),
@@ -88,36 +88,36 @@ class _ResultPageState extends State<ResultPage> {
                           ),
                         ),
                       ),
-                    )
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 30)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        OutlineButton(
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushReplacement(MaterialPageRoute(
+                              builder: (context) => HomePage(),
+                            ));
+                          },
+                          child: Text(
+                            "Página Inicial",
+                            style: TextStyle(fontSize: 18.0),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10.0, horizontal: 25.0),
+                          borderSide:
+                              BorderSide(width: 3.0, color: Colors.indigo),
+                          splashColor: Colors.indigoAccent,
+                        )
+                      ],
+                    ),
                   ],
                 ),
               ),
             ),
-          ),
-          Expanded(
-            flex: 4,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                OutlineButton(
-                  onPressed: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (context) => HomePage(),
-                    ));
-                  },
-                  child: Text(
-                    "Página Inicial",
-                    style: TextStyle(fontSize: 18.0),
-                  ),
-                  padding:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  borderSide: BorderSide(width: 3.0, color: Colors.indigo),
-                  splashColor: Colors.indigoAccent,
-                )
-              ],
-            ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }

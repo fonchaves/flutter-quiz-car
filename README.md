@@ -4,11 +4,11 @@
   <br />
   <br />
 <p align="center">Discover your knowledge about the car factories&#x27; history.</p>
-  <!-- <img src="https://img.shields.io/github/issues/SkullDarth/bootcamp-gostack-challenge-03">
-  <img src="https://img.shields.io/github/forks/SkullDarth/bootcamp-gostack-challenge-03">
-  <img src="https://img.shields.io/badge/made%20by-SkullDarth-lightgrey">
-  <img src="https://img.shields.io/github/stars/SkullDarth/bootcamp-gostack-challenge-03">
-  <img src="https://img.shields.io/github/license/SkullDarth/bootcamp-gostack-challenge-03?logoColor=MIT"> -->
+  <!-- <img src="https://img.shields.io/github/issues/.../...">
+  <img src="https://img.shields.io/github/forks/.../...">
+  <img src="https://img.shields.io/badge/...">
+  <img src="https://img.shields.io/github/stars/.../...">
+  <img src="https://img.shields.io/github/license/.../..."> -->
 
    <p align="center">
       <a href="#sobre-o-desafio">Sobre o desafio</a>
